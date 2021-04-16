@@ -57,8 +57,8 @@ func main() {
 	words_list = strings.Split(words, ",")
 
 	shift_found := false
-	shift := 0
-	for shift < 26 && !shift_found {
+	shift := -1
+	for shift < 25 && !shift_found {
 		shift++
 		shift_found = true
 		for _, w := range words_list {
